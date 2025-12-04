@@ -1,0 +1,734 @@
+@import  url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins',sans-serif;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+#loading{
+    width:100vw;
+    height: 100vh;
+    position:fixed;
+    background: rgb(2,2,64);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#spinner{
+    animation: rotate 0.56s infinite linear;
+    width: 50px;
+    height: 50px;
+    border: 12px solid white;
+    border-bottom: 12px solid rgb(2, 2, 64);
+    border-radius: 50%;
+    margin: 0;
+}
+
+@keyframes rotate {
+    0% {transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+header {
+    width: 92vw;
+    padding: 6vh 4vw;
+    position: fixed;
+    font-weight: bold;
+    background: transparent;
+    color: skyblue;/*home,education,about me , skills, contact word*/
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+}
+header table {
+    width: 100%;
+}
+#logo{
+    width: 20%;
+}
+#navigation{
+    width: 70%;
+}
+#magnify{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.92);
+    position: fixed;
+    z-index: 4;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+#magnify h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 40px;
+    color: rgb(2,2,64);
+    transition: 0.4s ease-in-out;
+}
+#magnify h1:hover{
+    color: rgb(2,2,64);
+    cursor: pointer;
+}
+#img_here{
+    width: 90%;
+    height: 90%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    margin: 0px auto;
+}
+#logo{
+    font-size: 30px;
+    color: skyblue;/* Poojasri vijayan*/
+}
+#navigation{
+    text-align:right;
+}
+#navigation a{
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-bottom: 2px solid transparent;
+    margin-left: 4vw;
+    transition: 0.4s ease-in-out;
+}
+
+#navigation a:hover{
+    border-bottom: 2px solid skyblue;/*home education about me skills contact line*/
+}
+
+#top_part{
+    width: 100%;
+    border: 2vh solid rgb(2, 2, 64);/*background color*/
+}
+
+#top_part tr td{
+    width: 50%;
+}
+
+#about{
+    width: 84% !important;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0px 8%;
+}
+#about h1{
+    font-size: 45px;
+    word-wrap: break-word;
+}
+#about table {
+    width: 70%;
+    margin-top: 4vh;
+}
+#about table tr td{
+    width: 20% !important;
+    text-align: left;
+}
+.social{
+    color: white;/*logo mail,git,link*/
+    font-size: 23px;
+    padding: 12px 17px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+.social:hover{
+    cursor: pointer;
+    color: rgb(2, 2, 64);/*logo oda colour*/
+    background: white;/* logo ku vara background like round*/
+    box-shadow: 0px 10px 30px skyblue; /*mail logo oda shadow */
+}
+.btn_one{/**/
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 64);
+    background: skyblue;
+    border: 3px solid white;
+    padding:8px 40px;
+    width: 35%;
+    border-radius: 80px;
+    font-weight: bold;
+    margin: 2vh 0px;
+    transition: 0.4s ease-in-out;
+}
+.btn_one:hover{
+    box-shadow: 0px 10px  30px  skyblue; /*resume logo a touch pannum podhu shadow white*/
+    cursor: pointer;
+    color: skyblue;/*resume logo a touch pannum podhu word */
+    background: rgb(2, 2, 64);/*resume logo a touch pannum podhu bg */
+}
+#rightImage{
+    width: 100%;
+    height: 820px;
+    background: linear-gradient(0deg, rgba(255, 44, 90, 0.0)), url('Image.jpeg')center center;/*image oda gradient*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#work{
+    width: 92vh;
+    padding: 6vh 4vw;
+    font-weight: bold;
+}
+#work h1{
+    padding: 5px 0px;
+    border-bottom: 4px solid rgb(2, 2, 64);/*education kela iruka line*/
+    width: 6%;
+}
+#photos {
+    width: 100%;
+    columns: 3;
+    column-gap: 4%;
+    z-index: 1;
+    transition:0.4s ease-in-out;
+}
+#photos img{
+    width: 100%;
+    height: auto;
+    margin: 4.5% 0px;
+    transition:0.4s ease-in-out;
+}
+#photos img:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+#bio{
+    width: 92vw;
+    padding: 6vh 4vw;
+    font-weight: bold;
+}
+#bio h1{ /**/
+    padding:5px 0px;
+    border-bottom: 4px solid white; /*bio la h1 illa */
+    width: 8%;
+}
+#contact{
+    width: 92vw;
+    padding: 6vh 4vw;
+}
+#contact h1{
+    padding: 5px 0px;
+    border-bottom: 4px solid white; /*contact line*/
+    width: 10%;
+    
+}
+#contact table{
+    width: 100%;
+}
+#contact table tr td{
+    width: 50%;
+}
+#inner_div table{
+    width: 100%;
+}
+#inner_div table tr td{
+    font-weight: bold;
+}
+#inner_table tr td{
+    padding: 10px 20px !important;
+}
+#contact form{
+    width: 100%;
+}
+#contact form input{
+    width: 96%;
+    margin: 20px 1%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 3px solid white; /*form oda lines*/
+    padding: 8px 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+    color: white; /*form oda input color*/
+    font-weight: bold;
+}
+#contact form textarea{
+    width: 96%;
+    margin: 20px 1%;
+    padding: 8px 10px;
+    border: 0px;
+    border-bottom: 3px solid white; /*message oda line*/
+    padding: 8px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: transparent;
+    resize: none;
+    transition: 0.4s ease-in-out;
+    color: #000;
+    font-weight: bold;
+}
+#contact form input:focus{
+    outline: none;
+    border-bottom: 3px solid skyblue; /*text tough */
+}
+#contact form textarea:focus{
+    outline: none;
+    border-bottom: 3px solid skyblue;/*message tough*/
+}
+#address{
+    position: relative;
+    top: -25px;
+    left: 30px;
+}
+#footer{
+    width: 100%;
+    padding: 10vh 0px;
+    text-align: center;
+    font-weight: bold;
+}
+#footer a{
+    color: skyblue; /*last la mail logo */
+    text-decoration: none;
+}
+::placeholder{
+    color: #6d6d6d; /*type pandra placela */
+}
+button:focus{
+    outline: none;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: lightcyan; /*scroll pandra color*/
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(2, 2, 64);/*scroll pandra color*/
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(2, 2, 64);/*scroll*/
+}
+
+@media (max-width:1000px){
+    #photos {
+        columns:1;
+        column-gap:0%;
+    }
+    #photos img{
+        margin: 2% 0px;
+    }
+    #photos img:hover{
+        transform: scale(1);
+        cursor: pointer;
+    }
+    #rightImage{
+        display: none;
+    }
+    #top_part{
+        border: 0px;
+    }
+    #top_part tr td{
+        width: 100%;
+        text-align: center;
+    }
+    #about{
+        width: 92% !important;
+        height: 75vh;
+        padding-top: 20vh !important;
+        text-align: center;
+        padding: 0px 4%;
+    }
+    #about table{
+        width: 100%;
+        margin-top: 6vh;
+    }
+    #about table tr td{
+        text-align: center;
+    }
+    .btn_one{
+        padding: 6px 30px;
+        width: 60%;
+        margin: 4vh auto;
+        box-shadow: 0px 10px  20px  skyblue;/*resume oda border shade*/
+        background: white;/*resume oda bg*/
+        color: rgb(2, 2, 64);/*resume oda color*/
+    }
+    .btn_one:hover{
+        box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+        border: skyblue;
+        cursor: pointer;
+    }
+    #contact table tr td{
+        width: 100%;
+        display: block;
+    }
+    #inner_table tr td{
+        padding: 10px 0px !important;
+    }
+    #contact form input{
+        width: 90%;
+    }
+    #contact form textarea{
+        width: 90%;
+    }
+    #work h1{
+        width:19%;
+    }
+    #bio h1{
+        width: 33%;
+    }
+    #header {
+        width: 96vw;
+        background: rgb(2, 2, 64);/*background color name iruka place*/
+        padding: 4vh 2vw;
+        position: absolute;
+    }
+    #header:hover{
+        box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+        border: skyblue;
+        cursor: pointer;
+    }
+    #header table tr td{/*chinnadha pakkum podhu */
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px 0px;
+        
+    }
+    #navigation a{
+        color: white; /*home, education, aboutme, skills, contact*/
+    }
+}
+
+body{
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: skyblue;
+    margin: 0;
+    padding: 0;
+}
+.about{
+    padding: 50px 0 ;
+    text-align: center;
+}
+
+.title{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white; /*about me word*/
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;/*about me line*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.max-width  {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+}
+
+.column.left{
+    display: flex;
+    justify-content: center;
+}
+
+.column.right {
+    text-align: left;
+    padding-left: 40px;
+}
+
+img {
+    width: 390px;
+    height: 450px;
+    max-width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px skyblue; /*img oda shade*/
+}
+
+.text   {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;/*I'm poojasri vijayan*/
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.likes{
+    font-style: italic;
+    color: lavender;/*i love design*/
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+#work{
+    background-color: rgb(2, 2, 64); /*education full bg*/
+    border: skyblue;
+    box-shadow: 3px 3px 5px 5px skyblue; /*img oda shade*/
+    width:95%;
+    padding: 20px;
+    margin: 15px;
+}
+#work:hover {
+    box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+    border: skyblue;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#education ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#education li{
+    margin-bottom: 40px;
+    border-left: 3px solid purple; /*lines in education*/
+    padding-left: 10px;
+}
+
+#education h3{
+    margin: 0;
+    font-size: 20px;
+    color: skyblue;/*10th 12th BE*/
+}
+
+#education p{
+    margin: 5px 0;
+    font-size: 16px;
+    color: lavender;/*school name*/
+}
+
+h1 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /*Education word  ece word*/
+    margin-bottom: 10px;
+    padding-left: 5px;
+
+}
+/* General styles */
+body{
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    color: skyblue; /*i am dedicated para html contact full details*/
+    background-color: rgb(2, 2, 64); /*kila oda bg color*/
+}
+
+/*Form styles */
+#contact-form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(2, 2, 64); /*info box*/
+    border-radius: 6px;
+    box-shadow: 0 2px 4px skyblue;/*info box*/
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group textarea{
+    resize: vertical;
+}
+
+/*Button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*Primary button*/
+.btn-primary {
+    background-color: whitesmoke;
+}
+
+.btn-primary:hover{
+    background-color: black;
+    color: skyblue;
+}
+
+/*Secondary button */
+.btn-secondary  {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover    {
+    background-color: #565e64;
+}
+
+/*success button*/
+.btn-success    {
+    background-color: #28a745;
+}
+
+.btn-success:hover  {
+    background-color: #218838;
+}
+
+/* Danger button*/
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover   {
+    background-color: #c82333;
+}
+
+/* Warning button */
+.btn-warning    {
+    background-color: #ffc107;
+}
+
+.btn-warning:hover  {
+    background-color: #17a2b8;
+}
+
+/* Info button */
+.btn-info     {
+    background-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/*Common style for skills section */
+.skills {
+    background-color: skyblue;
+    padding: 50px 0;
+}
+
+#skills h1  {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;/*technical skill word*/
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.skills-content  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for individual skill boxes */
+.skill-box  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.skill-meter {
+    position: relative;
+    width: 200px;
+    height: 25px;
+    background: white;/*skill percent*/
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-meter::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right,rgba(255, 44, 90, 0.8),rgba(255, 44, 90, 0.8));
+    transition: width 1s ease;
+}
+
+/* Adjust width based on prficiency level*/
+.css::before {
+    width: 75%;
+}
+
+.js::before {
+    width: 80%;
+}
+
+
+.html::before   {
+    width:90%
+}
+
+.java::before   {
+    width: 65%;
+}
+
+.python::before {
+    width:70%;
+}
