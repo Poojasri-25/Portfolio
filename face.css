@@ -725,10 +725,6 @@ body{
     width:90%
 }
 
-.java::before   {
-    width: 65%;
-}
-
 .python::before {
     width:70%;
 }
