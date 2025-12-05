@@ -12,7 +12,7 @@ body {
     width:100vw;
     height: 100vh;
     position:fixed;
-    background: white;
+    background: rgb(2,2,64);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -23,8 +23,8 @@ body {
     animation: rotate 0.56s infinite linear;
     width: 50px;
     height: 50px;
-    border: 12px solid rgb(2, 2, 64);
-    border-bottom: 12px solid #fff;
+    border: 12px solid white;
+    border-bottom: 12px solid rgb(2, 2, 64);
     border-radius: 50%;
     margin: 0;
 }
@@ -39,7 +39,7 @@ header {
     position: fixed;
     font-weight: bold;
     background: transparent;
-    color: #fff;
+    color: skyblue;/*home,education,about me , skills, contact word*/
     transition: 0.4s ease-in-out;
     z-index: 2;
 }
@@ -50,7 +50,7 @@ header table {
     width: 20%;
 }
 #navigation{
-    width: 80%;
+    width: 70%;
 }
 #magnify{
     width: 100vw;
@@ -67,11 +67,11 @@ header table {
     top: 0;
     right: 0;
     margin: 20px 40px;
-    color: #fff;
+    color: rgb(2,2,64);
     transition: 0.4s ease-in-out;
 }
 #magnify h1:hover{
-    color: rgb(2, 2, 64);
+    color: rgb(2,2,64);
     cursor: pointer;
 }
 #img_here{
@@ -82,8 +82,8 @@ header table {
     margin: 0px auto;
 }
 #logo{
-    font-size: 24px;
-    color: rgb(2, 2, 64);
+    font-size: 30px;
+    color: skyblue;/* Poojasri vijayan*/
 }
 #navigation{
     text-align:right;
@@ -91,19 +91,19 @@ header table {
 #navigation a{
     color: inherit;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-bottom: 2px solid transparent;
     margin-left: 4vw;
     transition: 0.4s ease-in-out;
 }
 
 #navigation a:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid skyblue;/*home education about me skills contact line*/
 }
 
 #top_part{
     width: 100%;
-    border: 2vh solid #fff;
+    border: 2vh solid rgb(2, 2, 64);/*background color*/
 }
 
 #top_part tr td{
@@ -132,7 +132,7 @@ header table {
     text-align: left;
 }
 .social{
-    color: rgb(2, 2, 64);
+    color: white;/*logo mail,git,link*/
     font-size: 23px;
     padding: 12px 17px;
     border-radius: 50%;
@@ -143,16 +143,16 @@ header table {
 }
 .social:hover{
     cursor: pointer;
-    color: #fff;
-    background: rgb(2, 2, 64);
-    box-shadow: 0px 10px 30px  rgb(2, 2, 60);
+    color: rgb(2, 2, 64);/*logo oda colour*/
+    background: white;/* logo ku vara background like round*/
+    box-shadow: 0px 10px 30px skyblue; /*mail logo oda shadow */
 }
-.btn_one{
+.btn_one{/**/
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     color: rgb(2, 2, 64);
-    background: #fff;
-    border: 3px solid rgb(2, 2, 64);
+    background: skyblue;
+    border: 3px solid white;
     padding:8px 40px;
     width: 35%;
     border-radius: 80px;
@@ -161,15 +161,15 @@ header table {
     transition: 0.4s ease-in-out;
 }
 .btn_one:hover{
-    box-shadow: 0px 10px  30px  rgb(2, 2, 64);
+    box-shadow: 0px 10px  30px  skyblue; /*resume logo a touch pannum podhu shadow white*/
     cursor: pointer;
-    color: #fff;
-    background: rgb(2, 2, 64);
+    color: skyblue;/*resume logo a touch pannum podhu word */
+    background: rgb(2, 2, 64);/*resume logo a touch pannum podhu bg */
 }
 #rightImage{
     width: 100%;
     height: 820px;
-    background: linear-gradient(0deg, rgba(255, 44, 90, 0.0),   rgb(2, 2, 64)), url('Image.jpeg')center center;
+    background: linear-gradient(0deg, rgba(255, 44, 90, 0.0)), url('Image.jpeg')center center;/*image oda gradient*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -180,7 +180,7 @@ header table {
 }
 #work h1{
     padding: 5px 0px;
-    border-bottom: 4px solid rgb(2, 2, 64);
+    border-bottom: 4px solid rgb(2, 2, 64);/*education kela iruka line*/
     width: 6%;
 }
 #photos {
@@ -205,9 +205,9 @@ header table {
     padding: 6vh 4vw;
     font-weight: bold;
 }
-#bio h1{
+#bio h1{ /**/
     padding:5px 0px;
-    border-bottom: 4px solid rgb(2, 2, 64);
+    border-bottom: 4px solid white; /*bio la h1 illa */
     width: 8%;
 }
 #contact{
@@ -216,8 +216,9 @@ header table {
 }
 #contact h1{
     padding: 5px 0px;
-    border-bottom: 4px solid rgb(2, 2, 64);
+    border-bottom: 4px solid white; /*contact line*/
     width: 10%;
+    
 }
 #contact table{
     width: 100%;
@@ -242,12 +243,12 @@ header table {
     margin: 20px 1%;
     background-color: transparent;
     border: 0px;
-    border-bottom: 3px solid rgb(2, 2, 70);
+    border-bottom: 3px solid white; /*form oda lines*/
     padding: 8px 10px;
     font-family: 'Poppins',sans-serif;
     font-size: 18px;
     transition: 0.4s ease-in-out;
-    color: #000;
+    color: white; /*form oda input color*/
     font-weight: bold;
 }
 #contact form textarea{
@@ -255,7 +256,7 @@ header table {
     margin: 20px 1%;
     padding: 8px 10px;
     border: 0px;
-    border-bottom: 3px solid rgb(2, 2, 70);
+    border-bottom: 3px solid white; /*message oda line*/
     padding: 8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -267,11 +268,11 @@ header table {
 }
 #contact form input:focus{
     outline: none;
-    border-bottom: 3px solid rgb(2, 2, 64, 1);
+    border-bottom: 3px solid skyblue; /*text tough */
 }
 #contact form textarea:focus{
     outline: none;
-    border-bottom: 3px solid rgb(2, 2, 64, 1);
+    border-bottom: 3px solid skyblue;/*message tough*/
 }
 #address{
     position: relative;
@@ -285,11 +286,11 @@ header table {
     font-weight: bold;
 }
 #footer a{
-    color: rgb(2, 2, 64);
+    color: skyblue; /*last la mail logo */
     text-decoration: none;
 }
 ::placeholder{
-    color: #000;
+    color: #6d6d6d; /*type pandra placela */
 }
 button:focus{
     outline: none;
@@ -299,13 +300,13 @@ button:focus{
     height: 5px;
 }
 ::-webkit-scrollbar-track{
-    background: #f1f1f1;
+    background: lightcyan; /*scroll pandra color*/
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(0,0,0);
+    background: rgb(2, 2, 64);/*scroll pandra color*/
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: rgba(0,0,0,0.8);
+    background: rgb(2, 2, 64);/*scroll*/
 }
 
 @media (max-width:1000px){
@@ -348,12 +349,13 @@ button:focus{
         padding: 6px 30px;
         width: 60%;
         margin: 4vh auto;
-        box-shadow: 0px 10px  20px  rgb(2, 2, 64,0.8);
-        background: rgb(2, 2, 64);
-        color: #fff;
+        box-shadow: 0px 10px  20px  skyblue;/*resume oda border shade*/
+        background: white;/*resume oda bg*/
+        color: rgb(2, 2, 64);/*resume oda color*/
     }
     .btn_one:hover{
-        box-shadow:0px 10px 40px rgb(2, 2, 64, 0.8);
+        box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+        border: skyblue;
         cursor: pointer;
     }
     #contact table tr td{
@@ -377,26 +379,32 @@ button:focus{
     }
     #header {
         width: 96vw;
-        background: #fff;
+        background: rgb(2, 2, 64);/*background color name iruka place*/
         padding: 4vh 2vw;
         position: absolute;
     }
-    #header table tr td{
+    #header:hover{
+        box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+        border: skyblue;
+        cursor: pointer;
+    }
+    #header table tr td{/*chinnadha pakkum podhu */
         width: 100%;
         display: block;
         text-align: center;
         padding: 15px 0px;
+        
     }
     #navigation a{
-        color: #000;
+        color: white; /*home, education, aboutme, skills, contact*/
     }
 }
 
 body{
     font-family: Arial,sans-serif;
     line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: white;
+    color: skyblue;
     margin: 0;
     padding: 0;
 }
@@ -408,7 +416,7 @@ body{
 .title{
     font-size: 32px;
     margin-bottom: 20px;
-    color: rgb(2, 2, 64, 0.8);
+    color: white; /*about me word*/
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
@@ -419,7 +427,7 @@ body{
     display: block;
     width: 100%;
     height: 3px;
-    background-color: rgb(2, 2, 64, 0.8);
+    background-color: white;/*about me line*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -456,13 +464,13 @@ img {
     height: 450px;
     max-width: 80%;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px skyblue; /*img oda shade*/
 }
 
 .text   {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(2, 2, 64, 0.8);
+    color: white;/*I'm poojasri vijayan*/
     margin-bottom: 10px;
     overflow: hidden;
     display: inline-block;
@@ -478,7 +486,7 @@ p{
 
 .likes{
     font-style: italic;
-    color: #777;
+    color: lavender;/*i love design*/
 }
 
 body{
@@ -488,19 +496,19 @@ body{
     padding: 0;
 }
 #work{
-    background-color: #f5f5f5;
+    background-color: rgb(2, 2, 64); /*education full bg*/
+    border: skyblue;
+    box-shadow: 3px 3px 5px 5px skyblue; /*img oda shade*/
+    width:95%;
     padding: 20px;
     margin: 15px;
-    width: 95%;
+}
+#work:hover {
+    box-shadow:0px 10px 40px skyblue;/*resume  touch panna border shade*/
+    border: skyblue;
+    cursor: pointer;
 }
 
-#work:hover {
-    box-shadow:0px 10px 40px;/*resume  touch panna border shade*/
-    border: skyblue;
-    background-color: white;
-    cursor: pointer;
-    box-shadow: 3px 3px 5px 5px rgb(2, 2, 64);
-}
 h1{
     text-align: center;
     color: #333;
@@ -514,27 +522,27 @@ h1{
 
 #education li{
     margin-bottom: 40px;
-    border-left: 3px solid rgb(2, 2, 50);
+    border-left: 3px solid purple; /*lines in education*/
     padding-left: 10px;
 }
 
 #education h3{
     margin: 0;
     font-size: 20px;
-    color: rgb(2, 2, 64, 0.8);
+    color: skyblue;/*10th 12th BE*/
 }
 
 #education p{
     margin: 5px 0;
     font-size: 16px;
-    color: #333;
+    color: lavender;/*school name*/
 }
 
 h1 {
     text-align: left;
     font-size: 32px;
     font-weight: bold;
-    color: rgb(2, 2, 64, 0.8);
+    color: white; /*Education word  ece word*/
     margin-bottom: 10px;
     padding-left: 5px;
 
@@ -543,8 +551,8 @@ h1 {
 body{
     font-family: arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f0f0f0;
+    color: skyblue; /*i am dedicated para html contact full details*/
+    background-color: rgb(2, 2, 64); /*kila oda bg color*/
 }
 
 /*Form styles */
@@ -552,9 +560,9 @@ body{
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color:#fff ;
+    background-color:rgb(2, 2, 64); /*info box*/
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px skyblue;/*info box*/
 }
 
 .form-group{
@@ -585,7 +593,7 @@ body{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: black;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -593,11 +601,12 @@ body{
 
 /*Primary button*/
 .btn-primary {
-    background-color: rgb(2, 2, 64, 0.8);
+    background-color: whitesmoke;
 }
 
 .btn-primary:hover{
     background-color: black;
+    color: skyblue;
 }
 
 /*Secondary button */
@@ -647,7 +656,7 @@ body{
 
 /*Common style for skills section */
 .skills {
-    background-color: whitesmoke;
+    background-color: skyblue;
     padding: 50px 0;
 }
 
@@ -655,7 +664,7 @@ body{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgb(2, 2, 64,0.8);
+    color: white;/*technical skill word*/
     margin-bottom: 10px;
     padding-left: 5px;
 }
@@ -686,7 +695,7 @@ body{
     position: relative;
     width: 200px;
     height: 25px;
-    background: #e0e0e0;
+    background: white;/*skill percent*/
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -698,7 +707,7 @@ body{
     left: 0;
     height: 100%;
     border-radius: 10px;
-    background: linear-gradient(to right,rgb(2, 2, 64, 0.8),rgb(2, 2, 64, 0.8));
+    background: linear-gradient(to right,rgba(255, 44, 90, 0.8),rgba(255, 44, 90, 0.8));
     transition: width 1s ease;
 }
 
