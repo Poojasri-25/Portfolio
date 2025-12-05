@@ -732,3 +732,6 @@ body{
 .python::before {
     width:70%;
 }
+.sql:: before {
+    width:85%;
+}
